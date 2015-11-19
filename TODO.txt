@@ -6,6 +6,7 @@
 3. Produce R scripts to draw the graphs in 1 (the graphs will have to be re-made and given more appropriate names).
 4. For the climatologies in 1, produce a .csv of the summary statistics (n, SD, mean, median, 5th and 95th percentiles, start date, end date).
 5. Provide maps of the localities where data are being collected currently, with different symbols/colours indicating the different sources of data. Another map will show future, planned installations.
+6. I Suppose all the versions need to go up to 3.4?
 
 Anything else?
 
