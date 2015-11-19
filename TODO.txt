@@ -3,8 +3,9 @@
 	b. each of the interpolated grid pixels (i.e. in insitu_polyMap_sa_Annual_v3.3.pdf);
 	b. at each of the 58 sites as per tempssa_v3.0/coords_to_extract/58sites.csv.
 2. Produce a .csv with the coordinates, above.
-3. Produce R scripts to draw the graphs in 1.
+3. Produce R scripts to draw the graphs in 1 (the graphs will have to be re-made and given more appropriate names).
 4. For the climatologies in 1, produce a .csv of the summary statistics (n, SD, mean, median, 5th and 95th percentiles, start date, end date).
+5. Provide maps of the localities where data are being collected currently, with different symbols/colours indicating the different sources of data. Another map will show future, planned installations.
 
 Anything else?
 
