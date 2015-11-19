@@ -2,6 +2,10 @@
 
 The aim of the South African Coastal Temperature Network (SACTN) is to design, coordinate, develop and implement a publicly accessible database of all long-term *in situ* seawater temperature records available in the coastal region along the South African nearshore. This database receives data from diverse sources, including the South African Environmental Observation Network (SAEON), the Department of Environmental Affairs (DEA), the Department of Agriculture, Forestry and Fisheries (DAFF), the South African Weather Service (SAWS), the KwaZulu-Natal Sharks Board (KZNSB), Ezemvelo KZN Wildlife (EKZNW) and the University of the Western Cape (UWC).
 
+[The SACTN](/graphs/coast_site_source.jpg)
+
+<!-- /Users/ajsmit/Dropbox/repos/SACTN/graphs/coast_site_source.pdf -->
+
 Objectives are to:
 
 * Plan the technical and scientific framework underpinning the SACTN.
