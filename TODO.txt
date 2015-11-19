@@ -1,0 +1,10 @@
+1. Produce the data files (*.csv format) that will allow one to reproduce the graphs in the /graphs folder. This will be the monthly climatologies per
+	a. each SACTN site;
+	b. each of the interpolated grid pixels (i.e. in insitu_polyMap_sa_Annual_v3.3.pdf);
+	b. at each of the 58 sites as per tempssa_v3.0/coords_to_extract/58sites.csv.
+2. Produce a .csv with the coordinates, above.
+3. Produce R scripts to draw the graphs in 1.
+4. For the climatologies in 1, produce a .csv of the summary statistics (n, SD, mean, median, 5th and 95th percentiles, start date, end date).
+
+Anything else?
+
