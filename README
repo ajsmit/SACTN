@@ -10,7 +10,9 @@ lines of R code:
 	library('ProjectTemplate')
 	load.project()
 
-After you entering these lines of code, one will see a series of automated
+Or one may enter 'source('startup.R')' for the same effect.
+
+After these lines of code have been entered, one will see a series of automated
 messages as ProjectTemplate goes about doing its work. This work involves:
 * Reading in the global configuration file contained in `config`.
 * Loading the R packages listed in the configuration file.

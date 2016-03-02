@@ -14,4 +14,4 @@
 #############################################################################
 ## Read in the .csv file
   # This file is compiled manually
-site.list <- read.csv("metadata/site_list_v4.0.csv")
+site_list <- read.csv("metadata/site_list_v4.0.csv")
