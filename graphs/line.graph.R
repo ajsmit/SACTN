@@ -13,7 +13,7 @@ require(ggplot2)
 
 #############################################################################
 ## Subsets monthly data as preferred
-monthlyData <- droplevels(SACTNmonthly_v4.0[SACTNmonthly_v4.0$src == "SAEON",])
+monthlyData <- droplevels(SACTNmonthly_v4.0[SACTNmonthly_v4.0$src == "DAFF",])
 monthlyData$date <- as.Date(monthlyData$date) # convert from "POSIXct" to "Date" for plotting
 
 #############################################################################
@@ -23,9 +23,9 @@ monthlyData$date <- as.Date(monthlyData$date) # convert from "POSIXct" to "Date"
 lg <- ggplot(data = monthlyData, aes(x = date, y = temp)) + bw_update +
   #geom_line() +
   geom_line(aes(colour = site)) +
-  facet_grid(site ~ .) +
+  #facet_grid(site ~ .) +
   scale_x_date(date_breaks = "1 year", date_labels = "%Y", expand = c(0.015,0)) +
   ylab(expression(paste("Temperature (", degree~C, ")"))) + xlab("Date") +
   theme(axis.text.x = element_text(angle = 45, vjust = 0.5))
 lg
-ggsave("graphs/SAEONsites.pdf", height = 16, width = 12)
+ggsave("graphs/DAFFcolour.pdf", height = 6, width = 12)
