@@ -1,9 +1,39 @@
+---
+title: "README"
+author: "AJ Smit"
+date: "12 June 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 # The South African Coastal Temperature Network (SACTN)
 
 The aim of the South African Coastal Temperature Network (SACTN) is to design, coordinate, develop and implement a publicly accessible database of all long-term *in situ* seawater temperature records available in the coastal region along the South African nearshore. This database receives data from diverse sources, including the South African Environmental Observation Network (SAEON), the Department of Environmental Affairs (DEA), the Department of Agriculture, Forestry and Fisheries (DAFF), the South African Weather Service (SAWS), the KwaZulu-Natal Sharks Board (KZNSB), Ezemvelo KZN Wildlife (EKZNW) and the University of the Western Cape (UWC).
 
-![The SACTN](https://github.com/ajsmit/SACTN/tree/master/graphs/coast_site_source.jpg)
+```{r leaflet-map, echo = FALSE}
+library(leaflet)
+sites <- read.csv("metadata/site_list_v4.0.csv")
 
+pal <- colorFactor(palette = c("yellow", "orange", "green", "red", "turquoise", "navy", "blue"), 
+                   domain = c("DAFF", "DEA", "EKZNW", "KZNSB", "SAEON", "SAWS", "UWC"))
+
+content <- paste(sep = "<br/>", "<b>", sites$site, "</b>", sites$src, sites$type)
+
+m1 = leaflet() %>%
+  addProviderTiles("Esri.OceanBasemap",
+                   options = providerTileOptions(opacity = 1.0)) %>%
+  addCircleMarkers(lng = sites$lon, lat = sites$lat, group = sites$src,
+                   popup = content, radius = 5, color = pal(sites$src),
+                   stroke = FALSE, fillOpacity = 0.8) %>%
+  setView(24, -31, zoom = 6)
+m1
+```
+
+
+<!-- ![The SACTN](https://github.com/ajsmit/SACTN/tree/master/graphs/coast_site_source.jpg) -->
 
 <!-- /Users/ajsmit/Dropbox/repos/SACTN/graphs/coast_site_source.pdf -->
 
