@@ -13,7 +13,7 @@ require(ggplot2)
 
 #############################################################################
 ## Subsets monthly data as preferred
-monthlyData <- droplevels(SACTNmonthly_v4.0[SACTNmonthly_v4.0$src == "SAWS",])
+monthlyData <- droplevels(SACTNmonthly_v4.0[SACTNmonthly_v4.0$src == "UWC",])
 monthlyData$date <- as.Date(monthlyData$date) # convert from "POSIXct" to "Date" for plotting
 
 #############################################################################
@@ -28,4 +28,4 @@ lg <- ggplot(data = monthlyData, aes(x = date, y = temp)) + bw_update +
   ylab(expression(paste("Temperature (", degree~C, ")"))) + xlab("Date") +
   theme(axis.text.x = element_text(angle = 45, vjust = 0.5))
 lg
-ggsave("graphs/SAWSsites.pdf", height = 40, width = 12)
+ggsave("graphs/UWCsites.pdf", height = 16, width = 12)

@@ -29,4 +29,4 @@ bp <- ggplot(data = monthlyData, aes(x = month, y = temp)) + bw_update +
   labs(y = expression(paste("Temperature (", degree~C, ")")), x = "")# +
   #theme(axis.text.x = element_text(angle = 45, vjust = 0.5))
 bp
-ggsave("graphs/RossBox.pdf", height = 6, width = 12)
+ggsave("graphs/boxes.pdf", height = 6, width = 12)
