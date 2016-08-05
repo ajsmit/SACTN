@@ -11,7 +11,7 @@ bw_update <- theme_bw() +
                           axis.title = element_text(size = 8),
                           axis.text = element_text(size = 8),
                           axis.ticks = element_line(size = 0.5),
-                          #axis.ticks.length = unit(2, "mm"), # Disabled lines with "unit" as they are not working...
+                          #axis.ticks.length = unit(2, "mm"),
                           #legend.position = "top",
                           #legend.direction = "horizontal",
                           legend.title = element_text(size = 8),
