@@ -49,4 +49,13 @@ Objectives are to:
 * Provide the best record of nearshore seawater temperatures to coastal, shallow water marine scientists to support their research activities.
 * Advise National Government re consequences for climate change, marine resource management.
 
-Currently the SACTN comprises 127 temperature records along an approximately 2,700 km of coastline, and more recorders are being installed annually.
+Currently the SACTN comprises 131 temperature records along an approximately 2,700 km of coastline, and more recorders are being installed annually.
+
+Update August 10th, 2016
+
+* SACTN version changed from v4.0 to v4.1
+* The site list for the new versiuon now contains the meta-data of each time series
+* Depth and instrument type no longer included with the time series
+* The climatologies no longer show the lat/ lon of the site either
+* All time series now have an index column which is used to show the correct order of sites along the coast
+* The total number of sites is now 131 with more coming soon

@@ -14,7 +14,7 @@ require(ggplot2); require(lubridate)
 #############################################################################
 ## Subsets monthly data as preferred
 sites <- c("Oudekraal", "Bordjies", "Betty's Bay")
-monthlyData <- droplevels(SACTNmonthly_v4.0[SACTNmonthly_v4.0$site %in% sites,])
+monthlyData <- droplevels(SACTNmonthly_v4.1[SACTNmonthly_v4.1$site %in% sites,])
 monthlyData$date <- as.Date(monthlyData$date) # convert from "POSIXct" to "Date" for plotting
 monthlyData$month <- month(monthlyData$date, label = TRUE)
 

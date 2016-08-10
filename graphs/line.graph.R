@@ -13,7 +13,7 @@ require(ggplot2)
 
 #############################################################################
 ## Subsets monthly data as preferred
-monthlyData <- droplevels(SACTNmonthly_v4.0[SACTNmonthly_v4.0$src == "UWC",])
+monthlyData <- droplevels(SACTNmonthly_v4.1[SACTNmonthly_v4.1$src == "UWC",])
 monthlyData$date <- as.Date(monthlyData$date) # convert from "POSIXct" to "Date" for plotting
 
 #############################################################################
