@@ -59,3 +59,7 @@ Update August 10th, 2016
 * The climatologies no longer show the lat/ lon of the site either
 * All time series now have an index column which is used to show the correct order of sites along the coast
 * The total number of sites is now 131 with more coming soon
+
+Update August 16th, 2016
+
+* New data added for Port St Francis/ SAEON for 2013-2016
