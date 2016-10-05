@@ -13,8 +13,9 @@ require(ggplot2); require(lubridate)
 
 #############################################################################
 ## Subsets monthly data as preferred
-sites <- c("Oudekraal", "Bordjies", "Betty's Bay")
-monthlyData <- droplevels(SACTNmonthly_v4.1[SACTNmonthly_v4.1$site %in% sites,])
+levels(SACTNmonthly_v4.1$index)
+index <- c("Port Nolloth/ DEA", "Port Nolloth/ SAWS", "Port Nolloth/ UWC")
+monthlyData <- droplevels(SACTNmonthly_v4.1[SACTNmonthly_v4.1$index %in% index,])
 monthlyData$date <- as.Date(monthlyData$date) # convert from "POSIXct" to "Date" for plotting
 monthlyData$month <- month(monthlyData$date, label = TRUE)
 
@@ -23,10 +24,10 @@ monthlyData$month <- month(monthlyData$date, label = TRUE)
 
 # Here is the base code from which one can play around to create new things
 bp <- ggplot(data = monthlyData, aes(x = month, y = temp)) + bw_update +
-  geom_boxplot(aes(fill = site), show.legend = FALSE, colour = "black") +
-  facet_wrap(~site, ncol = 3) +
-  #scale_x_date(date_breaks = "1 year", date_labels = "%Y", expand = c(0.015,0)) +
+  geom_boxplot(aes(fill = index), show.legend = FALSE, colour = "black") +
+  # facet_wrap(~index, ncol = 3) +
+  # scale_x_date(date_breaks = "1 year", date_labels = "%Y", expand = c(0.015,0)) +
   labs(y = expression(paste("Temperature (", degree~C, ")")), x = "")# +
-  #theme(axis.text.x = element_text(angle = 45, vjust = 0.5))
+  # theme(axis.text.x = element_text(angle = 45, vjust = 0.5))
 bp
 ggsave("graphs/boxes.pdf", height = 6, width = 12)
