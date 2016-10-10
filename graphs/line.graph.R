@@ -1,8 +1,8 @@
 #############################################################################
 ###"graph/line.graph.R"
 ## This script does:
-# 1. Subsets monthly data as preferred;
-# 2. Creates line graph of data
+# 1. Subset monthly data as preferred;
+# 2. Create line graph of data
 ## DEPENDS ON:
 require(ggplot2)
 ## USED BY:
@@ -11,8 +11,9 @@ require(ggplot2)
 # Results may vary
 #############################################################################
 
-#############################################################################
-## Subsets monthly data as preferred
+
+# 1. Subset monthly data as preferred ----------------------------------------
+
 monthlyData <- droplevels(SACTNmonthly_v4.1[SACTNmonthly_v4.1$src == "UWC",])
 monthlyData$date <- as.Date(monthlyData$date) # convert from "POSIXct" to "Date" for plotting
 
@@ -22,8 +23,8 @@ site.names <- function(sites) {
   return(sites)
 }
 
-#############################################################################
-## Creates line graph of data
+
+# 2. Create line graph of data --------------------------------------------
 
 # Here is the base code from which one can play around to create new things
 lg <- ggplot(data = monthlyData, aes(x = date, y = temp)) + bw_update +
