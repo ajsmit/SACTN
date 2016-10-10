@@ -1,8 +1,8 @@
 #############################################################################
 ###"graph/box.plots.R"
 ## This script does:
-# 1. Subsets monthly data as preferred;
-# 2. Creates line graph of data
+# 1. Subset monthly data as preferred;
+# 2. Create boxplots of data
 ## DEPENDS ON:
 require(ggplot2); require(lubridate)
 ## USED BY:
@@ -11,16 +11,17 @@ require(ggplot2); require(lubridate)
 # Results may vary
 #############################################################################
 
-#############################################################################
-## Subsets monthly data as preferred
+
+# 1. Subset monthly data as preferred -------------------------------------
+
 levels(SACTNmonthly_v4.1$index)
 index <- c("Port Nolloth/ DEA", "Port Nolloth/ SAWS", "Port Nolloth/ UWC")
 monthlyData <- droplevels(SACTNmonthly_v4.1[SACTNmonthly_v4.1$index %in% index,])
 monthlyData$date <- as.Date(monthlyData$date) # convert from "POSIXct" to "Date" for plotting
 monthlyData$month <- month(monthlyData$date, label = TRUE)
 
-#############################################################################
-## Creates boxplots of data
+
+# 2. Create boxplots of data ----------------------------------------------
 
 # Here is the base code from which one can play around to create new things
 bp <- ggplot(data = monthlyData, aes(x = month, y = temp)) + bw_update +
