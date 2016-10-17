@@ -73,7 +73,7 @@ interpolate <- function(coords, name = "New Site", df = SACTNmonthly_v4.1, n = 5
 
 # 2. Interpolate a time series from a given data frame --------------------
 
-coords <- c(28.431673, -32.638033) # The coordinates for the coastline near Qolora
-qolora <- interpolate(coords, "Qolora", n = 12)
+# coords <- c(28.431673, -32.638033) # The coordinates for the coastline near Qolora
+# qolora <- interpolate(coords, "Qolora", n = 12)
 
 # save(qolora, file = "data/Qolora.Rdata")
