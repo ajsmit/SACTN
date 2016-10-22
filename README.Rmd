@@ -67,3 +67,7 @@ Update August 16th, 2016
 Update September 5th, 2016
 
 * New data added from KZNSB; all active time series now updated from end 2011 to end 2014
+
+Update October 22nd, 2016
+
+* Multiple new UWC time series added

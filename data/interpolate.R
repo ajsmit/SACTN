@@ -51,7 +51,7 @@ interpolate <- function(coords, name = "New Site", df = SACTNmonthly_v4.1, n = 5
     nn <- nn+1
     sites2 <- droplevels(sites1[as.integer(knnx.index(sites1[,5:6], coords, k = nn)),])
     df1 <- df[df$index %in% sites2$index,]
-    df2 <- dcast(df1, index~date, value.var = "temp")
+    df2 <- dcast(df1, index ~ date, mean, value.var="temp")
     df3 <- df2[, colSums(is.na(df2)) == 0]
   }
   intrp <- function(dat){
@@ -59,12 +59,14 @@ interpolate <- function(coords, name = "New Site", df = SACTNmonthly_v4.1, n = 5
              extrap = TRUE, dupl = "mean"))$z
   }
   site <- data.frame(site = name, adply(df3[2:length(df3)], 2, intrp))[,1:3]
+  site$X1 <- as.Date(site$X1)
   if(length(site$V1[complete.cases(site$V1)]) == 0){
     sites3 <- droplevels(sites1[as.integer(knnx.index(sites1[,5:6], coords, k = 2)),])
     df4 <- df[df$index %in% sites3$index,]
-    df5 <- dcast(df4, index~date, value.var = "temp")
+    df5 <- dcast(df4, index ~ date, mean, value.var="temp")
     df6 <- df5[, colSums(is.na(df5)) == 0]
     site <- data.frame(site = name, adply(df6[2:length(df6)], 2, colMeans))
+    site$X1 <- as.Date(site$X1)
   }
   colnames(site)[2:3] <- c("date", "temp")
   return(site)
