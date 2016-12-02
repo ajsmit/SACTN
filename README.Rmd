@@ -71,3 +71,7 @@ Update September 5th, 2016
 Update October 22nd, 2016
 
 * Multiple new UWC time series added
+
+Update December 2nd, 2016
+
+* 9999 values used in Cannon Rocks time series corrected to NA
