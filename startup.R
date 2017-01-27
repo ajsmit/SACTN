@@ -1,2 +1,2 @@
-library('ProjectTemplate')
+library(ProjectTemplate)
 load.project()

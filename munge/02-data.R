@@ -24,9 +24,9 @@
 # Monthly data
 if(file.exists("~/SACTNraw/data/SACTNmonthly_v4.1.Rdata")){
   load("~/SACTNraw/data/SACTNmonthly_v4.1.Rdata")
-  save(SACTNmonthly_v4.1, file = "data/SACTNmonthly_v4.1.RData")
+  save(SACTNmonthly_v4.1, file = "data/SACTNmonthly_v4.1.Rdata")
 }
-load("data/SACTNmonthly_v4.1.RData")
+load("data/SACTNmonthly_v4.1.Rdata")
 
 # Annual data
 if(file.exists("~/SACTNraw/data/SACTNannual_v4.1.Rdata")){
