@@ -99,3 +99,7 @@ Update March 5th, 2017
 Update March 21st, 2017
 
 * Added decadal trend values to meta-data for 30+ year time series
+
+Update March 24th, 2017
+
+* Corrected minor lon/ lat error for Sodwana/ EKZNW
