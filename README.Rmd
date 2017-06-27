@@ -103,3 +103,7 @@ Update March 21st, 2017
 Update March 24th, 2017
 
 * Corrected minor lon/ lat error for Sodwana/ EKZNW
+
+Update June 26th, 2017
+
+* Add script that makes extracting preferred time series more direct
