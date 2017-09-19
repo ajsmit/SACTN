@@ -107,3 +107,7 @@ Update March 24th, 2017
 Update June 26th, 2017
 
 * Add script that makes extracting preferred time series more direct
+
+Update September 19th, 2017
+
+* Three UWC time series updated
