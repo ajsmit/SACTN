@@ -10,7 +10,7 @@ library(tidyverse)
 #
 #############################################################################
 
-load("data/SACTNmonthly_v4.1.Rdata")
+load("~/SACTN/data/SACTNmonthly_v4.1.Rdata")
 print(unique(SACTNmonthly_v4.1$index))
 
 extract.ts <- function(ts_index, file_name){

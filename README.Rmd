@@ -111,3 +111,7 @@ Update June 26th, 2017
 Update September 19th, 2017
 
 * Three UWC time series updated
+
+Update October 12th, 2017
+
+* Minor tweaks
