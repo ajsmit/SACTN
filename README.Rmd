@@ -119,3 +119,7 @@ Update October 12th, 2017
 Update January 4th, 2018
 
 * SAWS 2017 data uploaded
+
+Update March 19th, 2018
+
+* Update to v4.2

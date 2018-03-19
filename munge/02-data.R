@@ -22,22 +22,22 @@
 # }
 
 # Monthly data
-if(file.exists("~/SACTNraw/data/SACTNmonthly_v4.1.Rdata")){
-  load("~/SACTNraw/data/SACTNmonthly_v4.1.Rdata")
-  save(SACTNmonthly_v4.1, file = "data/SACTNmonthly_v4.1.Rdata")
+if(file.exists("~/SACTNraw/data/4_products/SACTN_monthly_v4.2.RData")){
+  load("~/SACTNraw/data/4_products/SACTN_monthly_v4.2.RData")
+  save(SACTNmonthly_v4.1, file = "data/SACTN_monthly_v4.2.RData")
 }
-load("data/SACTNmonthly_v4.1.Rdata")
+load("data/SACTN_monthly_v4.2.RData")
 
-# Annual data
-if(file.exists("~/SACTNraw/data/SACTNannual_v4.1.Rdata")){
-  load("~/SACTNraw/data/SACTNannual_v4.1.Rdata")
-  save(SACTNannual_v4.1, file = "data/SACTNannual_v4.1.Rdata")
+# Yearly data
+if(file.exists("~/SACTNraw/data/4_products/SACTN_yearly_v4.2.RData")){
+  load("~/SACTNraw/data/4_products/SACTN_yearly_v4.2.RData")
+  save(SACTNannual_v4.1, file = "data/SACTN_yearly_v4.2.RData")
 }
-load("data/SACTNannual_v4.1.Rdata")
+load("data/SACTN_yearly_v4.2.RData")
 
 # Climatology data
-if(file.exists("~/SACTNraw/data/SACTNclim_v4.1.Rdata")){
-  load("~/SACTNraw/data/SACTNclim_v4.1.Rdata")
-  save(SACTNclim_v4.1, file = "data/SACTNclim_v4.1.Rdata")
+if(file.exists("~/SACTNraw/data/4_products/SACTN_clim_v4.2.RData")){
+  load("~/SACTNraw/data/4_products/SACTN_clim_v4.2.RData")
+  save(SACTNclim_v4.1, file = "data/SACTN_clim_v4.2.RData")
 }
-load("data/SACTNclim_v4.1.Rdata")
+load("data/SACTN_clim_v4.2.RData")
