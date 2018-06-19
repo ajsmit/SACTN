@@ -22,7 +22,7 @@ library(akima)
 # It then creates a time series for that point based on the nearest n time series
 
 ## For testing ##
-# coords <- c(28.431673, -32.638033)
+coords <- c(28.431673, -32.638033)
 # coords <- c(17.89, -31.33)
 # df <- SACTN_monthly_v4.2
 # n <- 5
