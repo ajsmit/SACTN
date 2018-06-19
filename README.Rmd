@@ -15,7 +15,7 @@ The aim of the South African Coastal Temperature Network (SACTN) is to design, c
 
 ```{r leaflet-map, echo = FALSE}
 library(leaflet)
-sites <- read.csv("metadata/site_list_v4.0.csv")
+sites <- read.csv("metadata/site_list_v4.2.csv")
 
 pal <- colorFactor(palette = c("yellow", "orange", "green", "red", "turquoise", "navy", "blue"), 
                    domain = c("DAFF", "DEA", "EKZNW", "KZNSB", "SAEON", "SAWS", "UWC"))
@@ -123,3 +123,8 @@ Update January 4th, 2018
 Update March 19th, 2018
 
 * Update to v4.2
+
+Update June 19th, 2018
+
+* More v4.2 updates
+* Project wide fixes

@@ -1,5 +1,5 @@
 library(leaflet)
-sites <- read.csv("metadata/site_list_v4.0.csv")
+sites <- read.csv("metadata/site_list_v4.2.csv")
 
 pal <- colorFactor(palette = c("yellow", "orange", "green", "red", "turquoise", "navy", "blue"), 
                    domain = c("DAFF", "DEA", "EKZNW", "KZNSB", "SAEON", "SAWS", "UWC"))

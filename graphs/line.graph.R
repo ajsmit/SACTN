@@ -14,7 +14,7 @@ require(ggplot2)
 
 # 1. Subset monthly data as preferred ----------------------------------------
 
-monthlyData <- droplevels(SACTNmonthly_v4.1[SACTNmonthly_v4.1$src == "UWC",])
+monthlyData <- droplevels(SACTN_monthly_v4.1[SACTN_monthly_v4.2$src == "UWC",])
 monthlyData$date <- as.Date(monthlyData$date) # convert from "POSIXct" to "Date" for plotting
 
 ## Create labeler to show site names in the correct order

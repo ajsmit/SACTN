@@ -14,9 +14,9 @@ require(ggplot2); require(lubridate)
 
 # 1. Subset monthly data as preferred -------------------------------------
 
-levels(SACTNmonthly_v4.1$index)
+levels(SACTN_monthly_v4.2$index)
 index <- c("Port Nolloth/ DEA", "Port Nolloth/ SAWS", "Port Nolloth/ UWC")
-monthlyData <- droplevels(SACTNmonthly_v4.1[SACTNmonthly_v4.1$index %in% index,])
+monthlyData <- droplevels(SACTN_monthly_v4.2[SACTN_monthly_v4.2$index %in% index,])
 monthlyData$date <- as.Date(monthlyData$date) # convert from "POSIXct" to "Date" for plotting
 monthlyData$month <- month(monthlyData$date, label = TRUE)
 
